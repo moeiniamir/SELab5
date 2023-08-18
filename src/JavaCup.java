@@ -1,14 +1,9 @@
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 public class JavaCup {
     public static void main(String[] args)
     {
-        List<Integer> range = IntStream.rangeClosed(0, 30000-1).boxed().toList();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Press number1: ");
         int i = scanner.nextInt();
@@ -28,7 +23,7 @@ public class JavaCup {
         else { System.out.println("NO"); }
     }
     public static void temp() {
-        ArrayList a = new ArrayList();
+        ArrayList a = new ArrayList(10000 * 20000);
 
         for (int i = 0; i < 10000; i++)
         {
